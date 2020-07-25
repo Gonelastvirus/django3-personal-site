@@ -1,0 +1,20 @@
+.navbar-nav .nav-link {
+  color: rgb(248, 248, 248) !important;
+  margin: 0 4rem;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(mobile1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+.container img {
+  border: 3px solid rgb(80, 150, 132);
+}

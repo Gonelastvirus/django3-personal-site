@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %} {% block content %}<br />
+<title>{{ blog.title }}</title>
+<h1 style="color: white;">{{ blog.title }}</h1>
+<h2 style="color: white;">{{ blog.date|date:'M d Y' }}</h2>
+<img src="{{ blog.image.url }}" class="img-fluid" data-size="1920x1080" /><br />
+<pree style="color: white;">{{ blog.discription|striptags|linebreaks }}</pree>
+{% endblock %}

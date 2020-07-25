@@ -1,0 +1,43 @@
+.navbar-nav .nav-link {
+  color: rgb(248, 248, 248) !important;
+  margin: 0 4rem;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(blog.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+#blogtitle {
+  font-size: 6rem;
+}
+center {
+  border: 2px solid white;
+  border-radius: 20px;
+  border-color: rgb(80, 150, 132);
+}
+.d-inline-block {
+  border: 3px solid rgb(80, 150, 132);
+}
+@font-face {
+  font-family: sofiapro;
+  src: url("sofiapro.otf");
+}
+pre {
+  font-family: sofiapro;
+}
+@media (min-width: 992px) {
+  #blogdetailtitle {
+    font-size: 5rem;
+  }
+  center {
+    border: none;
+  }
+}

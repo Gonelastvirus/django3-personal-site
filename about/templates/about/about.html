@@ -1,0 +1,64 @@
+{% extends 'about/base.html' %} {% block content %}
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="row justify-content-center mb-3">
+  <div class="col-md-9 text-center">
+    <h1 id="hometext" class="font-weight-bold">
+      Sabin <colour style="color: rgb(65, 170, 153);"> Adhikari</colour>
+    </h1>
+  </div>
+</div>
+<div class="row justify-content-center mb-3">
+  <div class="col-md-9 text-center">
+    <p id="info" class="font-weight-light">
+      New road Narayangadh-Chitwan,Nepal. Contact:+9779821266270, Mail:<colour
+        id="mail"
+        style="color: #ce01f7;"
+        >sabinadhikari494@gmail.com</colour
+      >
+    </p>
+  </div>
+</div>
+<div class="row justify-content-center mb-3">
+  <div class="col-md-9 text-center">
+    <div class="social-buttons">
+      <a href="https://www.facebook.com/sabinadhikari494"
+        ><i class="fab fa-facebook"></i
+      ></a>
+      <a href="https://www.instagram.com/adhikarii.sabin/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/sabin-adhikari-5b9b821b0/"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<div class="row justify-content-center mb-3">
+  <div class="col-md-9 text-center">
+    <h1 id="hometext" class="font-weight-bold">
+      <i class="fa fa-arrow-circle-down"></i>
+    </h1>
+  </div>
+</div>
+<br />
+{% for about in abouts %}
+<div class="row">
+  <div class="col-md-4">
+    <img
+      src="{{ about.image.url }}"
+      class="img-thumbnail border-dark"
+      data-size="1920x1080"
+    />
+  </div>
+  <div class="col-md-8">
+    <p style="color: white;" id="aboutme">{{ about.discription }}</p>
+  </div>
+</div>
+{% endfor %} {% endblock %}

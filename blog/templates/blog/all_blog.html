@@ -1,0 +1,18 @@
+<title>My Blogs List</title>
+{% extends 'blog/base.html' %} {% block content %}
+<center>
+  <h1 style="color: white;">Welcome to My Blog Gateway</h1>
+  <h2 style="color: white;">
+    I have written {{blogs.count}} blog{{blogs.count|pluralize}}
+  </h2>
+</center>
+<br />
+{% for blog in blogs %}
+<h2 style="color: white;">
+  <a href="{% url 'blog:detail' blog.id %}" style="color: rgb(50, 139, 109);"
+    >{{ blog.title }}</a
+  >
+</h2>
+<h5 style="color: white;">{{ blog.date|date:'M d Y'}}</h5>
+<p style="color: white;">{{ blog.discription|striptags|truncatechars:100 }}</p>
+{% endfor %} {% endblock %}

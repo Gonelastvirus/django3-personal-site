@@ -1,0 +1,31 @@
+{% extends "portfolio/base_award.html" %}{% load static %}{% block content %}
+<center>
+  <h2 style="color: white;">
+    My {{awards.count}} Award{{ awards.count|pluralize}}
+  </h2>
+</center>
+<hr />
+<div class="row">
+  {% for award in awards %}
+  <div class="col-lg-4 col-md-6">
+    {% if award.url %}
+    <a href="{{ award.url }}">
+      <img
+        src="{{ award.image.url }}"
+        class="img-thumbnail"
+        style="border-radius: 20px;"
+      />
+    </a>
+    {% else %}
+    <img
+      src="{{ award.image.url }}"
+      class="img-thumbnail"
+      style="border-radius: 20px;"
+    />
+    {% endif %}
+    <h3 style="color: white;">{{ award.title }}</h3>
+    <p style="color: white;">{{ award.discription }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

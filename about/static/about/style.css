@@ -1,0 +1,86 @@
+.navbar-nav .nav-link {
+  color: rgb(248, 248, 248) !important;
+  margin: 0 4rem;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(mobile.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+}
+@font-face {
+  font-family: mark;
+  src: url("mark.ttf");
+}
+#aboutme {
+  font-family: mark;
+  font-size: 1.5rem;
+}
+.container img {
+  border: 2px solid rgb(80, 150, 132);
+}
+#mail {
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 0.95rem;
+}
+
+#hometext {
+  color: white;
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+#info {
+  font-weight: lighter;
+  color: white;
+  font-style: unset;
+  margin-top: -2rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #33c0a1, #383838);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons a i {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i {
+  background: linear-gradient(45deg, #22a6b3, #30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
